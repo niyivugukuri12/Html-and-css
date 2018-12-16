@@ -1,0 +1,122 @@
+body{
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+ }
+ header{
+     background:black;
+     text-align: center;
+     display: block;
+ }
+ header h1{
+     margin: 0;
+     color:#FF953F;
+ }
+ p{
+     font-weight: bold;
+ }
+ ul, ol{
+     list-style: none;
+     
+    }
+    nav{
+        font-family: 'Roboto', sans-serif;
+    }
+   nav  li{
+        margin-right: 15px;
+        padding:3px;
+    }
+ nav li a{
+     text-decoration: none;
+     color: white;
+     display: block; 
+ }
+ .container{
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    justify-content: space-between;
+ }
+    
+.sub-container{
+    padding: 20px;
+    margin-top: 20px;
+    flex-basis: 30%;
+}
+
+.bigBox{
+    width: 1330px;
+    justify-content: center;
+}
+.box{
+    margin-bottom: 50px;
+    width: 400px;
+    padding: 40px;
+    background: rgb(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    flex-flow: column;
+}
+.box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.box .inputBox input{
+     width: 100%;
+     padding: 10px 0;
+     font-size: 16px;
+     color: #fff;
+     letter-spacing: 1px;
+     margin-bottom: 30px;
+     border: none;
+     border-bottom: 1px solid #fff;
+     outline: none;
+     background: transparent;
+ }
+ .box .inputBox label{
+    position: relative;
+     top: 0;
+     left: 0;
+     padding: 1px 0;
+     font-size: 16px;
+     color: #fff;
+     pointer-events: none;
+     transition: .5s;
+ }
+ .box .inputBox input:focus ~ label,
+ .box .inputBox input:valid ~ label
+ {
+    top: -18px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+ }
+ .box input[type="submit"]
+ {
+     background: transparent;
+     border: none;
+     outline: none;
+     color: #fff;
+     background: #03a9f4;
+     padding: 10px 20px;
+     cursor: pointer;
+     border-radius: 5px;
+ }
+
+@media(min-width:769px){
+    header h1,
+    header nav li{ display: inline-block;}
+    .container{display: flex;}
+    .bigBox{display:flex;}
+}
+ footer{
+    background:black;
+    padding: 25px;
+ }
+ footer p{
+     text-align: center;
+     color: white;
+ }
